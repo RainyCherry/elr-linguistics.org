@@ -1,0 +1,389 @@
+% ============================================================================
+% ELR REFERENCE DATABASE TEMPLATE
+% Journal: Explorations in Linguistic Review
+%
+% Use one entry type per source. Delete the examples you do not need.
+% Author/editor names in .bib files are separated by "and".
+% The ELR .bst file converts them to "&" in the final reference list.
+%
+% Protect capitals that must remain capitalised:
+%   title = {The syntax of {Mandarin} {VSO} clauses}
+%
+% Store a DOI without "https://doi.org/" when possible:
+%   doi = {10.1515/9783110197723.4.187}
+%
+% Main document:
+%   \usepackage[authoryear,round]{natbib}
+%   \bibliographystyle{elr-unified}
+%   ...
+%   \bibliography{references}
+%
+% Compile:
+%   XeLaTeX -> BibTeX -> XeLaTeX -> XeLaTeX
+% ============================================================================
+
+
+% ----------------------------------------------------------------------------
+% 1. JOURNAL ARTICLE
+% ----------------------------------------------------------------------------
+@article{alexiadou2006article,
+  author  = {Alexiadou, Artemis and Anagnostopoulou, Elena and Schäfer, Florian},
+  year    = {2006},
+  title   = {The properties of anticausatives crosslinguistically},
+  journal = {Linguistic Inquiry},
+  volume  = {37},
+  number  = {2},
+  pages   = {175--211},
+  doi     = {10.1162/ling.2006.37.2.175}
+}
+
+
+% ----------------------------------------------------------------------------
+% 2. BOOK / MONOGRAPH
+% ----------------------------------------------------------------------------
+@book{chomsky1995,
+  author    = {Chomsky, Noam},
+  year      = {1995},
+  title     = {The Minimalist Program},
+  address   = {Cambridge, MA},
+  publisher = {MIT Press}
+}
+
+
+% ----------------------------------------------------------------------------
+% 3. EDITED BOOK
+%    Leave author empty and use editor.
+% ----------------------------------------------------------------------------
+@book{editedbook2026,
+  editor    = {Smith, Anna and Brown, Peter},
+  year      = {2026},
+  title     = {Current Issues in Linguistic Theory},
+  address   = {Amsterdam},
+  publisher = {John Benjamins}
+}
+
+
+% ----------------------------------------------------------------------------
+% 4. CHAPTER IN AN EDITED BOOK
+% ----------------------------------------------------------------------------
+@incollection{alexiadou2006chapter,
+  author    = {Alexiadou, Artemis and Anagnostopoulou, Elena and Schäfer, Florian},
+  year      = {2006},
+  title     = {The properties of anticausatives crosslinguistically},
+  editor    = {Frascarelli, Mara},
+  booktitle = {Phases of interpretation},
+  pages     = {187--212},
+  address   = {Berlin, New York},
+  publisher = {De Gruyter Mouton},
+  doi       = {10.1515/9783110197723.4.187}
+}
+
+
+% ----------------------------------------------------------------------------
+% 5. CHAPTER / PART OF A BOOK
+% ----------------------------------------------------------------------------
+@inbook{inbook2024,
+  author    = {Doe, Jane},
+  year      = {2024},
+  title     = {A Grammar of Example Language},
+  chapter   = {5},
+  pages     = {101--128},
+  address   = {Oxford},
+  publisher = {Oxford University Press}
+}
+
+
+% ----------------------------------------------------------------------------
+% 6. CONFERENCE / PROCEEDINGS PAPER
+% ----------------------------------------------------------------------------
+@inproceedings{conferencepaper2024,
+  author    = {Doe, Jane and Roe, Richard},
+  year      = {2024},
+  title     = {A conference paper on syntax},
+  editor    = {Smith, Anna and Brown, Peter},
+  booktitle = {Proceedings of the International Conference on Syntax},
+  pages     = {33--52},
+  address   = {Oxford},
+  publisher = {Oxford Linguistics Society}
+}
+
+
+% ----------------------------------------------------------------------------
+% 7. CONFERENCE ALIAS
+%    @conference is treated like @inproceedings.
+% ----------------------------------------------------------------------------
+@conference{conferencealias2025,
+  author    = {Chen, Li},
+  year      = {2025},
+  title     = {Information structure and movement},
+  editor    = {Jones, Helen},
+  booktitle = {Proceedings of the Annual Meeting on Formal Linguistics},
+  pages     = {201--219},
+  address   = {London},
+  publisher = {Linguistics Association}
+}
+
+
+% ----------------------------------------------------------------------------
+% 8. PROCEEDINGS VOLUME
+% ----------------------------------------------------------------------------
+@proceedings{proceedings2025,
+  editor       = {Garcia, Maria and Wilson, David},
+  year         = {2025},
+  title        = {Proceedings of the 2025 Workshop on Grammar},
+  organization = {International Grammar Society},
+  address      = {Paris},
+  publisher    = {IGS Press}
+}
+
+
+% ----------------------------------------------------------------------------
+% 9. COLLECTION (ELR ALIAS)
+%    @collection is treated like @proceedings.
+% ----------------------------------------------------------------------------
+@collection{collection2026,
+  editor    = {Li, Ming and Wang, Rui},
+  year      = {2026},
+  title     = {Studies in Chinese Historical Syntax},
+  address   = {Beijing},
+  publisher = {Example Academic Press}
+}
+
+
+% ----------------------------------------------------------------------------
+% 10. PHD DISSERTATION
+% ----------------------------------------------------------------------------
+@phdthesis{phd2020,
+  author  = {Lee, Mina},
+  year    = {2020},
+  title   = {Topics in Comparative Syntax},
+  school  = {University of Somewhere},
+  address = {Somewhere}
+}
+
+
+% ----------------------------------------------------------------------------
+% 11. MASTER'S THESIS
+% ----------------------------------------------------------------------------
+@mastersthesis{masters2021,
+  author  = {Kim, Jisu},
+  year    = {2021},
+  title   = {Agreement and Case},
+  school  = {Example University},
+  address = {Seoul}
+}
+
+
+% ----------------------------------------------------------------------------
+% 12. GENERIC THESIS (ELR ALIAS)
+%    The "type" field controls the thesis description.
+% ----------------------------------------------------------------------------
+@thesis{thesis2022,
+  author  = {Miller, Jamie},
+  year    = {2022},
+  title   = {Interfaces in Grammar},
+  type    = {MPhil thesis},
+  school  = {Example University},
+  address = {Hong Kong}
+}
+
+
+% ----------------------------------------------------------------------------
+% 13. TECHNICAL REPORT
+% ----------------------------------------------------------------------------
+@techreport{report2023,
+  author      = {Taylor, Morgan},
+  year        = {2023},
+  title       = {A Technical Report on Corpus Methods},
+  institution = {Institute for Language Research},
+  type        = {Technical Report},
+  number      = {ELR-TR-03},
+  address     = {Boston}
+}
+
+
+% ----------------------------------------------------------------------------
+% 14. REPORT ALIAS
+%    @report is treated like @techreport.
+% ----------------------------------------------------------------------------
+@report{reportalias2024,
+  author      = {Williams, Jordan},
+  year        = {2024},
+  title       = {Annual Report on Linguistic Data},
+  institution = {Centre for Language Science},
+  type        = {Research Report},
+  number      = {24-07},
+  address     = {Sydney}
+}
+
+
+% ----------------------------------------------------------------------------
+% 15. UNPUBLISHED MANUSCRIPT / WORKING PAPER
+% ----------------------------------------------------------------------------
+@unpublished{unpublished2025,
+  author        = {Nguyen, Linh},
+  year          = {2025},
+  title         = {Unpublished Notes on Ellipsis},
+  note          = {Manuscript},
+  eprint        = {2501.00001},
+  archiveprefix = {arXiv}
+}
+
+
+% ----------------------------------------------------------------------------
+% 16. ONLINE RESOURCE / WEB PAGE
+% ----------------------------------------------------------------------------
+@online{online2026,
+  author       = {{Open Linguistics Group}},
+  year         = {2026},
+  title        = {Online Resource for Linguistic Data},
+  organization = {Open Linguistics Group},
+  url          = {https://example.org/resource},
+  urldate      = {27 August 2026}
+}
+
+
+% ----------------------------------------------------------------------------
+% 17. ELECTRONIC RESOURCE ALIAS
+%    @electronic is treated like @online.
+% ----------------------------------------------------------------------------
+@electronic{electronic2026,
+  author  = {Jones, Alex},
+  year    = {2026},
+  title   = {Electronic Archive of Syntax},
+  url     = {https://example.org/archive},
+  urldate = {27 August 2026}
+}
+
+
+% ----------------------------------------------------------------------------
+% 18. SOFTWARE
+% ----------------------------------------------------------------------------
+@software{software2025,
+  author       = {Coder, Alex},
+  year         = {2025},
+  title        = {SyntaxLab},
+  version      = {2.1},
+  organization = {Language Tools Project},
+  url          = {https://example.org/syntaxlab}
+}
+
+
+% ----------------------------------------------------------------------------
+% 19. DATASET
+% ----------------------------------------------------------------------------
+@dataset{dataset2024,
+  author    = {Researcher, Dana},
+  year      = {2024},
+  title     = {Mandarin Argument Structure Dataset},
+  version   = {1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.1234567}
+}
+
+
+% ----------------------------------------------------------------------------
+% 20. MANUAL / HANDBOOK
+% ----------------------------------------------------------------------------
+@manual{manual2026,
+  author       = {{ELR Editorial Team}},
+  year         = {2026},
+  title        = {ELR Author Template Manual},
+  organization = {Explorations in Linguistic Review},
+  edition      = {1st},
+  url          = {https://example.org/manual}
+}
+
+
+% ----------------------------------------------------------------------------
+% 21. BOOKLET / PAMPHLET
+% ----------------------------------------------------------------------------
+@booklet{booklet2024,
+  author       = {White, Emma},
+  year         = {2024},
+  title        = {A Short Guide to Linguistic Annotation},
+  howpublished = {Departmental publication},
+  address      = {Cambridge}
+}
+
+
+% ----------------------------------------------------------------------------
+% 22. PATENT
+% ----------------------------------------------------------------------------
+@patent{patent2023,
+  author       = {Inventor, Alex},
+  year         = {2023},
+  title        = {Method for Automated Speech Annotation},
+  type         = {US Patent},
+  number       = {US12345678},
+  organization = {United States Patent and Trademark Office}
+}
+
+
+% ----------------------------------------------------------------------------
+% 23. MISCELLANEOUS RESOURCE
+% ----------------------------------------------------------------------------
+@misc{misc2022,
+  author       = {Example, Erin},
+  year         = {2022},
+  title        = {A Miscellaneous Linguistic Resource},
+  howpublished = {Working paper},
+  url          = {https://example.org/misc}
+}
+
+
+% ----------------------------------------------------------------------------
+% 24. REFERENCE WORK (ELR ALIAS)
+%    @reference is treated like @book.
+% ----------------------------------------------------------------------------
+@reference{reference2020,
+  editor    = {Adams, Chris},
+  year      = {2020},
+  title     = {Encyclopedia of Linguistic Theory},
+  address   = {New York},
+  publisher = {Example Press}
+}
+
+
+% ----------------------------------------------------------------------------
+% 25. ENTRY IN A REFERENCE WORK (ELR ALIAS)
+%    @inreference is treated like @incollection.
+% ----------------------------------------------------------------------------
+@inreference{inreference2020,
+  author    = {Brown, Alice},
+  year      = {2020},
+  title     = {Argument Structure},
+  editor    = {Adams, Chris},
+  booktitle = {Encyclopedia of Linguistic Theory},
+  pages     = {55--68},
+  address   = {New York},
+  publisher = {Example Press}
+}
+
+
+% ----------------------------------------------------------------------------
+% 26. MULTI-VOLUME BOOK (ELR ALIAS)
+%    @mvbook is treated like @book.
+% ----------------------------------------------------------------------------
+@mvbook{mvbook2019,
+  author    = {Green, Robert},
+  year      = {2019},
+  title     = {The History of Grammar},
+  volume    = {2},
+  address   = {London},
+  publisher = {Example Academic}
+}
+
+
+% ----------------------------------------------------------------------------
+% 27. MULTI-VOLUME COLLECTION (ELR ALIAS)
+%    @mvcollection is treated like @proceedings / edited collection.
+% ----------------------------------------------------------------------------
+@mvcollection{mvcollection2018,
+  editor    = {Clark, Susan},
+  year      = {2018},
+  title     = {Collected Studies in Phonology},
+  volume    = {3},
+  address   = {Berlin},
+  publisher = {Example Verlag}
+}

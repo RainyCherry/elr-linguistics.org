@@ -1,0 +1,21 @@
+ELR REFERENCE-ONLY FIX — VERIFIED
+
+No page-layout redesign was performed.
+
+Reference system:
+- BibTeX + natbib
+- elr-unified.bst
+- references.bib
+- \nocite{*} prints every entry in references.bib
+
+Compile:
+XeLaTeX -> BibTeX -> XeLaTeX -> XeLaTeX
+
+Diagnostics fixed:
+- hyperref empty anchor
+- unavailable 3.575 pt font shapes / size substitutions
+- xeCJK undefined CJK monospaced family
+- overfull hbox caused by the existing logo placement
+- underfull hbox diagnostics in intentional end-matter metadata lines
+
+The existing visible layout is preserved.
